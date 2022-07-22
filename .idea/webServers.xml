@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3dc0b5cf-41de-409b-929f-69c13e39ddf2" name="joybot" url="http://joybot.devcraft.kr">
+        <fileTransfer rootFolder="/var/www/joybot" accessType="SFTP" host="devcraft.kr" port="22" sshConfigId="935c5b2b-6ed2-43c2-9a78-1469c476ecd1" sshConfig="root@devcraft.kr:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

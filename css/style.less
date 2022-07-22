@@ -1,0 +1,143 @@
+@import "asset";
+@use-rem: true;
+@rem: 32;
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+html { font-size:32px; font-family: Pretendard, sans-serif; }
+a { .ib; .pointer; }
+img { image-rendering: auto; backface-visibility: hidden; .wf; .vat; }
+input { outline: none; }
+.btn { .fs(18); .lh(25); .tc; color:#fff; .bgc(#2478FC); .br(4); .p(12,35); .-box; .ib;
+  &:hover { .bgc(#1657BF); }
+  &.disable { .bgc(#B8BFC4); }
+}
+
+
+.container { .f;
+  .wrap { .fs(0); .tc; .f;
+    &.client header .h-inner .user-type:after { content:'클라이언트' }
+    &.expert header .h-inner .user-type:after { content:'전문가' }
+    header { .wh(100%,80); .-b(#E6E8EB); .-box;
+      .h-inner { .max-w(1110); .tl; .mh-c; .clear; .rel;
+        a { .fs(16); .ls(-0.003em); .medium; }
+        h1 { .wh(133,80); .pt(29); .-box; .rel; .mr(28); .ib; .vam;
+          a { .fs(0); .f; }
+          &:after { .cnt; .wh(133,29); .contain('../img/logo.svg'); .abs; .lt(0,29); pointer-events: none; }
+        }
+        .gnb-list { .ib; .vam;
+          a { .lh(80); .m(0,20); color:#262C31; }
+        }
+        .log-wrap { .fr;
+          > div { .h(80);
+            a, p { .ib; .-box; .tc; }
+          }
+          .before-login { overflow: hidden;
+            .join { .lh(22); color:#636C73; .pt(28); }
+            .login { color:#2478FC; .wh(84,37); .lh(37); .br(34); .-a(#2478FC); .m(20,0,0,20); .-box; }
+          }
+          .joined { .hide;
+            a, p { .mt(23); }
+            .user { .rel; .pr(28); .-box; .ml(20);
+              &:after { .cnt; .contain('../img/arrow.svg'); .wh(16,16); .abs; .rt(2,1); transform: rotate(180deg); }
+            }
+          }
+          &.logged {
+            .before-login { .hide; }
+            .joined { .ib; }
+          }
+        }
+        .user-type { .fs(14); .lh(23); color:#2478FC; .p(3,9); .br(4); background: rgba(84,124,241,0.1); .ib; }
+        .info-box { .wh(237,235); .bgc(#fff); .-a(#B8BFC4); .tc; .-box; box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.05); .br(2); overflow: hidden; .abs; .rt(0,65); .hide;
+          .info-inner { .p(32,24,0); .-box; .tl;
+            .user { .fs(16); .lh(28); .mt(4); .bold; .rel;
+              &:after { .cnt; .wh(16,16); .contain('../img/arrow.svg'); .abs; .rt(-22,6); transform: rotate(90deg); }
+            }
+            .prj-manage { .lh(23); .regular; .ls(-0.002em); color:#262C31; .block; .p(19,0); .mt(17); .-t(#D1D5D9); .-box; }
+          }
+          .log-out { .fs(14); .lh(48); color:#808991; .wh(100%,48); .bgc(#F2F4F5); .abs; .lb; }
+        }
+        &.info-open {
+          .log-wrap .joined .user:after { transform: rotate(0); }
+          .info-box { .ib; }
+        }
+      }
+    }
+
+    section { .rel; height:calc(100% - 80px);
+      &.main {
+        article { .f; overflow: hidden;
+          .bg { .cover('../img/main-bg.png'); .wh(100%,712); .abs; .lb; }
+          .main-inner { .wh(100%,572); .abs; .lt(0,50%); transform: translateY(-50%); .mt(40);
+            .sub-tit { .fs(24); .lh(30); .ls(-0.007em); .semi-bold; color:#636C73; }
+            .tit { .fs(40); .lh(56); .ls(-0.007em); .bold; .mt(7); color:#2478FC; }
+            .select-wrap { .mt(46); .wh(1109,62); .mh-c; .rel; .tl;
+              .select { .wh(348,62); .ib; .regular; color:#B7BACA; .-a(#B8BFC4); .-r(#EEF0F5); .-box; .bgc(#fff); .rel; .tl; .vat;
+                &:after { .cnt; .wh(16,16); .abs; .rt(28,23); .contain('../img/arrow-blue.svg'); pointer-events: none; }
+                .sel-btn { .f; .abs; .lt; z-index: 1; }
+                .label { .fs(18); .h(62); .lh(62); .medium; .ls(-0.003em); .p(0,28); .-box; .w(348);
+                  &.on-val { color: #262C31; }
+                }
+                .opt-list { .abs; .lt(-1,0); .wh(348,0); .-box; .bgc(#fff); .-l(#B8BFC4); .-r(#B8BFC4); overflow: hidden;
+                  .opt-tit { .fs(18); .lh(62); color:#B7BACA; .regular; .ls(-0.003em); .pl(28); pointer-events: none; }
+                  .opt-items { .h(280); overflow: auto;
+                    .opt-item { .fs(16); .h(56); .lh(56); color: #636C73; .ls(-0.002em); .regular; .pl(28); .-box;
+                      &:hover { .bgc(#F4F9FF); }
+                    }
+                  }
+                }
+                &.select2, &.select3 { .-l; }
+                &.active {
+                  &:after { transform: rotate(180deg); }
+                  .label i { .ib; }
+                  .opt-list { .h(342); }
+                }
+              }
+              .search { .wh(65,62); .ib; .vat; .p(15,16); .-box; .-a(#B8BFC4); .-l;
+                img { .wh(32,32); pointer-events: none; }
+              }
+            }
+            .noti { .fs(15); .lh(44); .semi-bold; color:#fff; .wh(397,44); background: rgba(0,0,0,0.5); .br(23); .tc; .abs; .lb(50%,0); transform: translateX(-50%); .hide;
+              img { .wh(24,24); .ib; .mt(10); }
+            }
+            &.sector-error .noti { .ib;
+              i:before { content:'업종'}
+
+            }
+            &.marketing-error .noti { .ib;
+              i:before { content:'마케팅 목적'}
+            }
+            &.budget-error { .ib;
+              i:before { content:'예산'}
+            }
+          }
+        }
+      }
+      &.search-result { .pt(49); .-box;
+        article {
+          &.search-wrap { .wh(1087,129); .br(6); background: rgba(242, 244, 245, 0.3); .mh-c; .p(28,0,27); .-box; .-a(#D1D5D9);
+            .select-box { .ib; .vam; .m(0,15); .tl; .w(236);
+              p, .value { .fs(14); .lh(23); color: #808991; .mb(3); .medium; }
+              .select { .wh(100%,48); .bgc(#fff); .br(4); .-a(#D1D5D9); .-box;
+                .value { .f; .lh(48); .pl(20); .-box; color:#262C31; .pointer; .rel; .mb(6);
+                  &:after { .cnt; .wh(16,16); .contain('../img/arrow-gray.svg'); .abs; .rt(12,15); }
+                }
+                .opt-list { .wh(236,176); .bgc(#fff); .br(4); .-a(#D1D5D9); .ml(-1); .pt(12); .-box; overflow: auto; .hide;
+                  .opt-item { .fs(15); .lh(21); .h(40); .lh(40); .pl(20); .-box; color: #636C73;
+                    &.selected { .bgc(#F4F9FF); color: #2478FC; }
+                    &:hover { .bgc(#F2F4F5); }
+                  }
+                }
+                &.on .opt-list { .ib; }
+              }
+            }
+            .search-btn { .fs(12); .lh(22); .p(8,12); .ib; .vam; .mt(26);
+              img { .wh(16,16); .ib; .vam; .mr(2); }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
