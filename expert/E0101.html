@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JOYBOT</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!--wrap에 expert 클래스면 전문가 회원-->
+    <div class="wrap expert">
+      <header>
+
+        <!--홍길동 누르면 h-inner에 info-open클래스 추가 하면 로그아웃창 노출됨-->
+        <div class="h-inner info-open">
+          <h1><a href="">JOYBOT</a></h1>
+          <div class="gnb-list">
+            <a href="">서비스 소개</a>
+            <a href="">의뢰중 프로젝트</a>
+          </div>
+
+          <!--log-wrap에 logged 클래스 추가되면 로그인 된 상태-->
+          <div class="log-wrap logged">
+            <div class="before-login">
+              <a class="join">회원가입</a>
+              <a class="login">로그인</a>
+            </div>
+
+            <!--로그인되면 노출 됨-->
+            <div class="joined">
+              <p class="user-type"><!--여기엔 클라이언트면 클라이언트가 전문가면 파트너 텍스트가 들어갑니다.--></p>
+              <a class="user">홍길동 님</a>
+            </div>
+          </div>
+
+          <!--홍길동 누르면 노출되는 부분 로그아웃창-->
+          <div class="info-box">
+            <div class="info-inner">
+              <p class="user-type"><!--여기엔 클라이언트면 클라이언트가 전문가면 파트너 텍스트가 들어갑니다.--></p><br>
+              <a class="user">홍길동 고객님</a>
+              <a class="prj-manage">프로젝트 관리</a>
+            </div>
+            <a class="log-out">로그아웃</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="main">
+        <article>
+          <video muted autoplay loop playsinline>
+            <source src="../img/main.mp4" type="video/mp4">
+          </video>
+
+          <div class="main-inner">
+            <p class="sub">신규 고객사를 만나고 싶다면?</p>
+            <h2>지금 바로 조이봇과 함께하세요!</h2>
+            <a class="prj-go">의뢰중 프로젝트 보기 <img src="../img/arrow-right-blue.svg" alt=""></a>
+          </div>
+        </article>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

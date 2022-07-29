@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JOYBOT</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!--wrap에 client 클래스면 클라인언트 회원-->
+    <div class="wrap client">
+      <header>
+
+        <!--홍길동 누르면 h-inner에 info-open클래스 추가 하면 로그아웃창 노출됨-->
+        <div class="h-inner">
+          <h1><a href="">JOYBOT</a></h1>
+          <div class="gnb-list">
+            <a href="">서비스 소개</a>
+            <a href="">의뢰중 프로젝트</a>
+          </div>
+
+          <!--log-wrap에 logged 클래스 추가되면 로그인 된 상태-->
+          <div class="log-wrap">
+            <div class="before-login">
+              <a class="join">회원가입</a>
+              <a class="login">로그인</a>
+            </div>
+
+            <!--로그인되면 노출 됨-->
+            <div class="joined">
+              <p class="user-type"><!--여기엔 클라이언트면 클라이언트가 전문가면 파트너 텍스트가 들어갑니다.--></p>
+              <a class="user">홍길동 님</a>
+            </div>
+          </div>
+
+          <!--홍길동 누르면 노출되는 부분 로그아웃창-->
+          <div class="info-box">
+            <div class="info-inner">
+              <p class="user-type"><!--여기엔 클라이언트면 클라이언트가 전문가면 파트너 텍스트가 들어갑니다.--></p><br>
+              <a class="user">홍길동 고객님</a>
+              <a class="prj-manage">프로젝트 관리</a>
+            </div>
+            <a class="log-out">로그아웃</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="main">
+        <article>
+          <video muted autoplay loop playsinline>
+            <source src="../img/main.mp4" type="video/mp4">
+          </video>
+          <!--main-inner에 sector-error클래스 추가시 업종을 선택하세요 노출 -->
+          <!--main-inner에 marketing-error면 마케팅 목적을 선택하세요 노출-->
+          <!--main-inner에 budget-error면 예산을 선택하세요 노출-->
+          <div class="main-inner">
+            <p class="sub">당신이 찾던 진짜 마케팅</p>
+            <h2>조이봇에서 만나보세요!</h2>
+            <div class="select-wrap">
+
+              <!--업종-->
+              <!--select에 active 클래스 추가 되면 리스트 노출 됨-->
+              <div class="select select1">
+                <a class="sel-btn"></a>
+                <p class="label">업종</p>
+                <div class="opt-list">
+                  <p class="opt-tit">업종을 선택하세요</p>
+                  <ul class="opt-items">
+                    <li class="opt-item">IT/솔루션</li>
+                    <li class="opt-item">가구/인테리어</li>
+                    <li class="opt-item">건설/분양/부동산</li>
+                    <li class="opt-item">게임/어플리케이션</li>
+                    <li class="opt-item">공공기관/공기업</li>
+                    <li class="opt-item">교육/학원</li>
+                    <li class="opt-item">금융/대출</li>
+                    <li class="opt-item">렌탈/임대/리스</li>
+                    <li class="opt-item">매체/미디어</li>
+                    <li class="opt-item">문화/공연/예술</li>
+                    <li class="opt-item">반려동물</li>
+                    <li class="opt-item">병원/의료/제약</li>
+                    <li class="opt-item">보험/상조</li>
+                    <li class="opt-item">뷰티/미용</li>
+                    <li class="opt-item">생활/잡화</li>
+                    <li class="opt-item">스포츠/레저</li>
+                    <li class="opt-item">식품/음료</li>
+                    <li class="opt-item">엔터테인먼트</li>
+                    <li class="opt-item">여행</li>
+                    <li class="opt-item">웨딩/이벤트</li>
+                    <li class="opt-item">호텔/숙박</li>
+                    <li class="opt-item">의류/패션잡화</li>
+                    <li class="opt-item">제조/생산</li>
+                    <li class="opt-item">주식/증권</li>
+                    <li class="opt-item">협회/단체</li>
+                    <li class="opt-item">인쇄/출판</li>
+                    <li class="opt-item">식음료/외식/프렌차이즈</li>
+                    <li class="opt-item">기타 전문서비스</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!--마케팅 목적-->
+              <!--select에 active 클래스 추가 되면 리스트 노출 됨-->
+              <div class="select select2">
+                <a class="sel-btn"></a>
+                <p class="label">마케팅 목적</p>
+                <div class="opt-list">
+                  <p class="opt-tit">마케팅 목적을 선택하세요</p>
+                  <ul class="opt-items">
+                    <li class="opt-item">브랜딩</li>
+                    <li class="opt-item">기업홍보</li>
+                    <li class="opt-item">매출증대</li>
+                    <li class="opt-item">회원가입</li>
+                    <li class="opt-item">제품/서비스 홍보</li>
+                    <li class="opt-item">앱다운로드</li>
+                    <li class="opt-item">상담 DB</li>
+                    <li class="opt-item">기타</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!--예산-->
+              <!--select에 active 클래스 추가 되면 리스트 노출 됨-->
+              <div class="select select3">
+                <a class="sel-btn"></a>
+                <p class="label">예산</p>
+                <div class="opt-list">
+                  <p class="opt-tit">예산을 선택하세요</p>
+                  <ul class="opt-items">
+                    <li class="opt-item">100만원 이하</li>
+                    <li class="opt-item">100만원~500만원</li>
+                    <li class="opt-item">500만원~1,000만원</li>
+                    <li class="opt-item">1,000만원~5,000만원</li>
+                    <li class="opt-item">5,000만원 이상</li>
+                  </ul>
+                </div>
+              </div>
+              <a class="search"><img src="../img/search.svg" alt=""></a>
+            </div>
+            <div class="noti"><img src="../img/noti.svg" alt=""><i></i>을 선택하세요</div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

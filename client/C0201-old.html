@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JOYBOT</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <style>
+    .review { .mt(55);
+    ul { .w(781); .mh-c;
+    .review-list { .wh(371,198); .p(34,39); .-box; box-shadow: 0 4px 19px rgba(0, 0, 0, 0.07); .br(8); .ib; .vat; .m(0,39,15,0); .tl;
+    &:nth-child(2n) { .mr(0); }
+    .profile { .w(77); .ib; .vat; .mr(26);
+    .thumb { .wh(77,77); .br(50%); .rel; overflow: hidden;
+    img { .wf; .abs; .lt(50%,0); transform: translateX(-50%); }
+    }
+    .nm { .fs(15); .lh(21); .regular; color: #808991; .mt(10); .tc;
+    span { .block; }
+    }
+    }
+    .part-cont { .ib; .vat;
+    .tit { .fs(18); .lh(25); .semi-bold; .ls(-0.03em); .mb(15); .w(185); }
+    .txt { .fs(15); .lh(21); color:#808991; .regular; .w(185); }
+    }
+    }
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!--wrap에 client 클래스면 클라인언트 회원-->
+    <div class="wrap client">
+      <header>
+
+        <!--홍길동 누르면 h-inner에 info-open-->
+        <div class="h-inner">
+          <h1><a href="">JOYBOT</a></h1>
+          <div class="gnb-list">
+            <a href="">서비스 소개</a>
+            <a href="">의뢰중 프로젝트</a>
+          </div>
+
+          <!--log-wrap에 logged 클래스 추가되면 로그인 된 상태-->
+          <div class="log-wrap">
+            <div class="before-login">
+              <a class="join">회원가입</a>
+              <a class="login">로그인</a>
+            </div>
+
+            <!--로그인되면 노출 됨-->
+            <div class="joined">
+              <p class="user-type"><!--여기엔 클라이언트면 클라이언트가 전문가면 전문가 텍스트가 들어갑니다.--></p>
+              <a class="user">홍길동 님</a>
+            </div>
+          </div>
+
+          <!--홍길동 누르면 노출 됨-->
+          <div class="info-box">
+            <div class="info-inner">
+              <p class="user-type"><!--여기엔 클라이언트면 클라이언트가 전문가면 전문가 텍스트가 들어갑니다.--></p><br>
+              <a class="user">홍길동 고객님</a>
+              <a class="prj-manage">프로젝트 관리</a>
+            </div>
+            <a class="log-out">로그아웃</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="service-intro">
+        <article class="top">
+          <div class="t-inner">
+            <div class="t-h">
+              <h2>마케팅 경험이 없더라도</h2>
+              <p class="sub-tit">누구나 쉽게 마케팅 전략을 세울 수 있도록<br> 단, 3번의 클릭으로 마케팅 전략을 알 수 있어요 !</p>
+            </div>
+            <a href="" class="btn">나에게 꼭 맞는 마케팅 전략 알아보기</a>
+          </div>
+          <div class="service-summary">
+            <p>클라이언트 <span>487</span></p>
+            <p>대행사 <span>358</span></p>
+            <p>프로젝트 <span>378</span></p>
+            <p>누적 프로젝트 금액 <span>1,864,830,000원</span></p>
+          </div>
+        </article>
+        <article class="cont cont1">
+          <h2>조이봇 이용 후기</h2>
+          <p class="sub-tit">조이봇 고객들의 진짜 후기를 둘러보세요</p>
+          <div class="review">
+            <ul>
+              <li class="review-list">
+                <div class="profile">
+                  <div class="thumb">
+                    <img src="../img/thumb-pic.png" alt="">
+                  </div>
+                  <p class="nm">기업이름 <span>대표 박**</span></p>
+                </div>
+                <div class="part-cont">
+                  <p class="tit">뻔하지 않는 진짜 마케터를 매칭해주는 조이봇</p>
+                  <p class="txt">매칭부터 프로젝트 관리까지 조이봇이 함께해서 편했어요</p>
+                </div>
+              </li>
+              <li class="review-list">
+                <div class="profile">
+                  <div class="thumb">
+                    <img src="../img/thumb-pic.png" alt="">
+                  </div>
+                  <p class="nm">기업이름 <span>대표 박**</span></p>
+                </div>
+                <div class="part-cont">
+                  <p class="tit">뻔하지 않는 진짜 마케터를 매칭해주는 조이봇</p>
+                  <p class="txt">매칭부터 프로젝트 관리까지 조이봇이 함께해서 편했어요</p>
+                </div>
+              </li>
+              <li class="review-list">
+                <div class="profile">
+                  <div class="thumb">
+                    <img src="../img/thumb-pic.png" alt="">
+                  </div>
+                  <p class="nm">기업이름 <span>대표 박**</span></p>
+                </div>
+                <div class="part-cont">
+                  <p class="tit">뻔하지 않는 진짜 마케터를 매칭해주는 조이봇</p>
+                  <p class="txt">매칭부터 프로젝트 관리까지 조이봇이 함께해서 편했어요</p>
+                </div>
+              </li>
+              <li class="review-list">
+                <div class="profile">
+                  <div class="thumb">
+                    <img src="../img/thumb-pic.png" alt="">
+                  </div>
+                  <p class="nm">기업이름 <span>대표 박**</span></p>
+                </div>
+                <div class="part-cont">
+                  <p class="tit">뻔하지 않는 진짜 마케터를 매칭해주는 조이봇</p>
+                  <p class="txt">매칭부터 프로젝트 관리까지 조이봇이 함께해서 편했어요</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="cont cont2">
+
+        </article>
+      </section>
+
+      <footer>
+        <div class="ft-inner">
+          <p class="co-info">
+            ㈜ 조이마케팅<br>
+            대표이사 <i></i>고재연 | 사업자등록번호 <i></i> 496-86-01446  |  TEL <i></i> 02-539-9888 | E-MAIL <i></i> info@jykgroup.co.kr<br>
+            서울본사 <i></i>서울시 강남구 강남대로 354, 혜천빌딩 11층<br>
+            천안지사 <i></i>충남 천안시 서북구 축구센터로 167, 다산빌딩 5층
+          </p>
+          <a class="terms">이용약관</a>
+          <a class="privacy">개인정보처리방침</a>
+          <p class="copy">© Copyright 2022 Joymarketing. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="../js/pageHeight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>
