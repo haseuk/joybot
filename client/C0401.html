@@ -69,9 +69,14 @@
         <a href="" class="notice">공지사항</a>
       </aside>
 
+
+      <!--empty-prj 클래스 추가시 의뢰한 프로젝트 없음 노출되고 결과 값 리스트는 숨김처리-->
       <section class="on-request commissioned">
+
         <article>
           <h3>의뢰한 프로젝트</h3>
+
+          <!--의로한 프로젝트가 없을때 노출됨-->
           <div class="prj-content">
             <div class="empty-cnt">
               <img src="../img/empty.svg" alt="">
@@ -85,7 +90,90 @@
               </a>
             </div>
           </div>
+
+          <!--의로한 프로젝트가 결과-->
+          <div class="result-list">
+            <ul>
+              <li>
+                <div class="info-l">
+                  <p class="tit">학원 수강생 확보를 위한 마케팅 대행사 선정</p>
+                  <div class="key-word">
+                    <span>페이스북</span><span>네이버</span><span>인스타그램</span><span>구글</span>
+                  </div>
+                  <p class="head">모집마감일 <span class="date">2022.07.01 ~ 07.31</span></p>
+                </div>
+                <div class="info-r">
+                  <!--계약전-before, 검토중-under, 모집중-recruitment, 계약완료-comp, 모집완료-recruit-comp, 진행중-progress-->
+                  <p class="before">계약전</p>
+                  <p class="under">검토중</p>
+                </div>
+              </li>
+              <li>
+                <div class="info-l">
+                  <p class="tit">학원 수강생 확보를 위한 마케팅 대행사 선정</p>
+                  <div class="key-word">
+                    <span>페이스북</span><span>네이버</span><span>인스타그램</span><span>구글</span>
+                  </div>
+                  <p class="head">모집마감일 <span class="date">2022.07.01 ~ 07.31</span></p>
+                </div>
+                <div class="info-r">
+                  <p class="before">계약전</p>
+                  <p class="recruitment">모집중</p>
+                </div>
+              </li>
+              <li>
+                <div class="info-l">
+                  <p class="tit">학원 수강생 확보를 위한 마케팅 대행사 선정</p>
+                  <div class="key-word">
+                    <span>페이스북</span><span>네이버</span><span>인스타그램</span><span>구글</span>
+                  </div>
+                  <p class="head">모집마감일 <span class="date">2022.07.01 ~ 07.31</span></p>
+                </div>
+                <div class="info-r">
+                  <p class="comp">계약완료</p>
+                  <p class="recruit-comp">모집완료</p>
+                </div>
+              </li>
+              <li>
+                <div class="info-l">
+                  <p class="tit">학원 수강생 확보를 위한 마케팅 대행사 선정</p>
+                  <div class="key-word">
+                    <span>페이스북</span><span>네이버</span><span>인스타그램</span><span>구글</span>
+                  </div>
+                  <p class="head">모집마감일 <span class="date">2022.07.01 ~ 07.31</span></p>
+                </div>
+                <div class="info-r">
+                  <p class="before">계약전</p>
+                  <p class="progress">진행중</p>
+                </div>
+              </li>
+              <li>
+                <div class="info-l">
+                  <p class="tit">학원 수강생 확보를 위한 마케팅 대행사 선정</p>
+                  <div class="key-word">
+                    <span>페이스북</span><span>네이버</span><span>인스타그램</span><span>구글</span>
+                  </div>
+                  <p class="head">모집마감일 <span class="date">2022.07.01 ~ 07.31</span></p>
+                </div>
+                <div class="info-r">
+                  <p class="comp">계약완료</p>
+                  <p class="done">완료</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="pagination">
+            <a class="prev"></a>
+            <!-- num에 on 클래스 들어가면 배경색과 폰트 강조 됨-->
+            <a class="num on">1</a>
+            <a class="num">2</a>
+            <a class="num">3</a>
+            <a class="num">4</a>
+            <a class="next"></a>
+          </div>
         </article>
+
+
       </section>
 
       <footer>
