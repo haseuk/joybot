@@ -71,23 +71,19 @@
 
 
       <!--empty-prj 클래스 추가시 의뢰한 프로젝트 없음 노출되고 결과 값 리스트는 숨김처리-->
-      <section class="on-request commissioned empty-prj">
+      <section class="on-request commissioned">
 
         <article>
-          <h3>의뢰한 프로젝트</h3>
+          <h3>완료한 프로젝트</h3>
 
           <!--의로한 프로젝트가 없을때 노출됨-->
           <div class="prj-content">
             <div class="empty-cnt">
               <img src="../img/empty.svg" alt="">
               <p>
-                <span class="client-txt">의뢰한 프로젝트가 없어요<br> 조이봇에 프로젝트 의뢰해보세요!</span><!--클라이언트 일때 노출-->
-                <span class="expert-txt">추천된 프로젝트가 없어요</span><!--전문가 일때 노출-->
+                <span class="client-txt">완료한 프로젝트가 없어요</span><!--클라이언트 일때 노출-->
+                <span class="expert-txt">계약한 프로젝트가 없어요</span><!--전문가 일때 노출-->
               </p>
-              <a class="line-btn l-blue">
-                <span class="client-txt">프로젝트 의뢰하기</span><!--클라이언트 일때 노출-->
-                <span class="expert-txt">의뢰 프로젝트 보기</span><!--전문가 일때 노출-->
-              </a>
             </div>
           </div>
 
@@ -106,6 +102,7 @@
                   <!--계약전-before, 검토중-under, 모집중-recruitment, 계약완료-comp, 모집완료-recruit-comp, 진행중-progress-->
                   <p class="before">계약전</p>
                   <p class="under">검토중</p>
+                  <a class="edit-ic"><img src="../img/ico-edit.svg" alt=""> 서비스 평가 작성</a>
                 </div>
               </li>
               <li>
@@ -119,6 +116,7 @@
                 <div class="info-r">
                   <p class="before">계약전</p>
                   <p class="recruitment">모집중</p>
+                  <a class="edit-ic"><img src="../img/ico-edit.svg" alt=""> 서비스 평가 작성</a>
                 </div>
               </li>
               <li>
@@ -132,6 +130,7 @@
                 <div class="info-r">
                   <p class="comp">계약완료</p>
                   <p class="recruit-comp">모집완료</p>
+                  <a class="edit-ic"><img src="../img/ico-edit.svg" alt=""> 서비스 평가 작성</a>
                 </div>
               </li>
               <li>
@@ -145,6 +144,7 @@
                 <div class="info-r">
                   <p class="before">계약전</p>
                   <p class="progress">진행중</p>
+                  <a class="edit-ic"><img src="../img/ico-edit.svg" alt=""> 서비스 평가 작성</a>
                 </div>
               </li>
               <li>
@@ -158,6 +158,7 @@
                 <div class="info-r">
                   <p class="comp">계약완료</p>
                   <p class="done">완료</p>
+                  <a class="edit-ic"><img src="../img/ico-edit.svg" alt=""> 서비스 평가 작성</a>
                 </div>
               </li>
             </ul>
@@ -172,8 +173,6 @@
             <a class="next"></a>
           </div>
         </article>
-
-
       </section>
 
       <footer>
@@ -189,6 +188,29 @@
           <p class="copy">© Copyright 2022 Joymarketing. All Rights Reserved.</p>
         </div>
       </footer>
+    </div>
+
+
+    <!--서비스 평가 남기기-->
+    <!--popup에 on 클래스 추가되면 팝업 오픈 됨 -->
+    <div class="popup">
+      <div class="dim"></div>
+      <div class="inner eval-inner">
+        <p class="tit">서비스 평가 남기기</p>
+        <p class="sub">조이마케팅의 서비스는 어떠셨나요? 서비스 평가를 남겨주세요.</p>
+        <div class="stars">
+          <img src="../img/star.svg" alt="">
+          <img src="../img/star.svg" alt="">
+          <img src="../img/star.svg" alt="">
+          <img src="../img/ico-star-half.svg" alt="">
+          <img src="../img/ico-star-gray.svg" alt="">
+          <span><i>3.5</i>/5.0</span>
+        </div>
+        <p class="sm-tit">서비스 평가</p>
+        <textarea placeholder="솔직한 평가를 남겨주세요"></textarea>
+        <a class="btn">등록하기</a>
+        <a class="close">닫기</a>
+      </div>
     </div>
   </div>
   <script src="../js/pageHeight.js"></script>

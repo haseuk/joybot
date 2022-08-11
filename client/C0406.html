@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JOYBOT</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <!--wrap에 client 클래스면 클라인언트 회원-->
+    <!--wrap에 expert 클래스면 전문가 회원-->
+    <div class="wrap client">
+      <header>
+
+        <!--홍길동 누르면 h-inner에 info-open-->
+        <div class="h-inner">
+          <h1><a href="">JOYBOT</a></h1>
+          <div class="gnb-list">
+            <a href="">서비스 소개</a>
+            <a href="">의뢰중 프로젝트</a>
+          </div>
+
+          <!--log-wrap에 logged 클래스 추가되면 로그인 된 상태-->
+          <div class="log-wrap logged">
+            <div class="before-login">
+              <a class="join">회원가입</a>
+              <a class="login">로그인</a>
+            </div>
+
+            <!--로그인되면 노출 됨-->
+            <div class="joined">
+              <p class="user-type"><!--여기엔 클라이언트면 클라이언트가 전문가면 전문가 텍스트가 들어갑니다.--></p>
+              <a class="user">홍길동 님</a>
+            </div>
+          </div>
+
+          <!--홍길동 누르면 노출 됨-->
+          <div class="info-box">
+            <div class="info-inner">
+              <p class="user-type"><!--여기엔 클라이언트면 클라이언트가 전문가면 전문가 텍스트가 들어갑니다.--></p><br>
+              <a class="user">홍길동 고객님</a>
+              <a class="prj-manage">프로젝트 관리</a>
+            </div>
+            <a class="log-out">로그아웃</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="partner-detail">
+        <article>
+          <div class="part-side">
+            <div class="part-summary">
+              <div class="partner-info">
+                <div class="thumb"><img src="../img/thumb.png" alt="" style="width: 32px;height: 32px;"></div>
+                <div class="part-cont">
+                  <p class="nm">마케팅스튜디오</p>
+                  <div class="eval"><img src="../img/star.svg" alt=""> <span>4.9</span></div>
+                </div>
+              </div>
+              <div class="his">
+                <p class="tit">활동 정보</p>
+                <p>총 작업 프로젝트 <span>92건</span></p>
+                <p>완료 프로젝트 <span>50건</span></p>
+              </div>
+              <div class="key-word">
+                <p class="tit">전문 분야</p>
+                <span>페이스북</span><span>네이버</span><span>인스타그램</span><span>구글</span>
+              </div>
+            </div>
+            <div class="share">
+              <p>공유하기</p>
+              <div class="sns">
+                <a href="" class="fb"></a>
+                <a href="" class="kt"></a>
+                <a href="" class="sh"></a>
+              </div>
+            </div>
+          </div>
+
+          <!--partner-prj에 tab1 클래스면 tab1-cont 노출-->
+          <!--partner-prj에 tab2 클래스면 tab2-cont 노출-->
+          <!--partner-prj에 tab3 클래스면 tab3-cont 노출-->
+          <div class="partner-prj tab1">
+            <div class="tabs">
+              <a>파트너 정보</a>
+              <a>진행한 프로젝트</a>
+              <a>서비스 평가</a>
+            </div>
+
+            <!--tab1일때 노출되는 영역-->
+            <div class="tab-cont tab1-cont">
+              <h4 class="tit">파트너 정보</h4>
+              <div class="intro">
+                <p class="ti"><img src="../img/ico-quote.svg" alt=""> 회사 소개</p>
+                <p class="txt">안녕하세요. 마케팅스튜디오입니다. 저희는 네이버, 페이스북, 인스타 광고 등 여러 SNS 마케팅 전문회사입니다. 많은 경력이 있으며 잘 부탁드립니다.</p>
+              </div>
+              <div class="de-info">
+                <p class="ti"><img src="../img/ico-suitcase.svg" alt=""> 파트너 정보</p>
+                <table cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <th>기업명</th>
+                    <td>기업명</td>
+                    <th>설립일</th>
+                    <td>2021.10.10</td>
+                  </tr>
+                  <tr>
+                    <th>대표자</th>
+                    <td>홍길동</td>
+                    <th>매출규모</th>
+                    <td>8억원</td>
+                  </tr>
+                  <tr>
+                    <th>기업규모</th>
+                    <td>중견</td>
+                    <th>직원수</th>
+                    <td>200명</td>
+                  </tr>
+                  <tr>
+                    <th>업력</th>
+                    <td>20년</td>
+                    <th>위치</th>
+                    <td>서울 강남구</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <!--tab2일때 노출되는 영역-->
+            <div class="tab-cont tab2-cont">
+              <h4 class="tit">진행한 프로젝트 <span>15</span></h4>
+              <ul>
+                <li>
+                  <!--prj-type에 out-side추가 되면 외부 프로제트 컬러표시-->
+                  <p class="prj-type out-side">외부 프로젝트</p>
+                  <a class="more">더보기</a>
+                  <p class="prj-nm">프로젝트명</p>
+                  <div class="prj-wrap">
+                    <div class="date">
+                      <p class="ti"><i>작업 기간</i> <span>2022 (3개월)</span></p>
+                    </div>
+                    <div class="key-wrap">
+                      <p class="ti"><i>진행 서비스</i></p>
+                      <div class="key-word">
+                        <span>홈페이지</span><span>네이버</span><span>구글</span><span>페이스북</span><span>인스타그램</span>
+                        <div class="more">
+                          <img src="../img/more.svg" alt="">
+                          <div class="all">
+                            <p class="a-tit">진행서비스</p>
+                            <p class="a-txt">홈페이지, 네이버, 페이스북, 인스타그램,구글, 마케팅</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <p class="prj-type">내부 프로젝트</p>
+                  <a class="more">더보기</a>
+                  <p class="prj-nm">프로젝트명</p>
+                  <div class="prj-wrap">
+                    <div class="date">
+                      <p class="ti"><i>작업 기간</i> <span>2022 (3개월)</span></p>
+                    </div>
+                    <div class="key-wrap">
+                      <p class="ti"><i>진행 서비스</i></p>
+                      <div class="key-word">
+                        <span>홈페이지</span><span>네이버</span><span>구글</span><span>페이스북</span><span>인스타그램</span>
+                        <div class="more">
+                          <img src="../img/more.svg" alt="">
+                          <div class="all">
+                            <p class="a-tit">진행서비스</p>
+                            <p class="a-txt">홈페이지, 네이버, 페이스북, 인스타그램,구글, 마케팅</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <p class="prj-type">내부 프로젝트</p>
+                  <a class="more">더보기</a>
+                  <p class="prj-nm">프로젝트명</p>
+                  <div class="prj-wrap">
+                    <div class="date">
+                      <p class="ti"><i>작업 기간</i> <span>2022 (3개월)</span></p>
+                    </div>
+                    <div class="key-wrap">
+                      <p class="ti"><i>진행 서비스</i></p>
+                      <div class="key-word">
+                        <span>홈페이지</span><span>네이버</span><span>구글</span><span>페이스북</span><span>인스타그램</span>
+                        <div class="more">
+                          <img src="../img/more.svg" alt="">
+                          <div class="all">
+                            <p class="a-tit">진행서비스</p>
+                            <p class="a-txt">홈페이지, 네이버, 페이스북, 인스타그램,구글, 마케팅</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <p class="prj-type">내부 프로젝트</p>
+                  <a class="more">더보기</a>
+                  <p class="prj-nm">프로젝트명</p>
+                  <div class="prj-wrap">
+                    <div class="date">
+                      <p class="ti"><i>작업 기간</i> <span>2022 (3개월)</span></p>
+                    </div>
+                    <div class="key-wrap">
+                      <p class="ti"><i>진행 서비스</i></p>
+                      <div class="key-word">
+                        <span>홈페이지</span><span>네이버</span><span>구글</span><span>페이스북</span><span>인스타그램</span>
+                        <div class="more">
+                          <img src="../img/more.svg" alt="">
+                          <div class="all">
+                            <p class="a-tit">진행서비스</p>
+                            <p class="a-txt">홈페이지, 네이버, 페이스북, 인스타그램,구글, 마케팅</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <p class="prj-type">내부 프로젝트</p>
+                  <a class="more">더보기</a>
+                  <p class="prj-nm">프로젝트명</p>
+                  <div class="prj-wrap">
+                    <div class="date">
+                      <p class="ti"><i>작업 기간</i> <span>2022 (3개월)</span></p>
+                    </div>
+                    <div class="key-wrap">
+                      <p class="ti"><i>진행 서비스</i></p>
+                      <div class="key-word">
+                        <span>홈페이지</span><span>네이버</span><span>구글</span><span>페이스북</span><span>인스타그램</span>
+                        <div class="more">
+                          <img src="../img/more.svg" alt="">
+                          <div class="all">
+                            <p class="a-tit">진행서비스</p>
+                            <p class="a-txt">홈페이지, 네이버, 페이스북, 인스타그램,구글, 마케팅</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <p class="prj-type">내부 프로젝트</p>
+                  <a class="more">더보기</a>
+                  <p class="prj-nm">프로젝트명</p>
+                  <div class="prj-wrap">
+                    <div class="date">
+                      <p class="ti"><i>작업 기간</i> <span>2022 (3개월)</span></p>
+                    </div>
+                    <div class="key-wrap">
+                      <p class="ti"><i>진행 서비스</i></p>
+                      <div class="key-word">
+                        <span>홈페이지</span><span>네이버</span><span>구글</span><span>페이스북</span><span>인스타그램</span>
+                        <div class="more">
+                          <img src="../img/more.svg" alt="">
+                          <div class="all">
+                            <p class="a-tit">진행서비스</p>
+                            <p class="a-txt">홈페이지, 네이버, 페이스북, 인스타그램,구글, 마케팅</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <p class="prj-type">내부 프로젝트</p>
+                  <a class="more">더보기</a>
+                  <p class="prj-nm">프로젝트명</p>
+                  <div class="prj-wrap">
+                    <div class="date">
+                      <p class="ti"><i>작업 기간</i> <span>2022 (3개월)</span></p>
+                    </div>
+                    <div class="key-wrap">
+                      <p class="ti"><i>진행 서비스</i></p>
+                      <div class="key-word">
+                        <span>홈페이지</span><span>네이버</span><span>구글</span><span>페이스북</span><span>인스타그램</span>
+                        <div class="more">
+                          <img src="../img/more.svg" alt="">
+                          <div class="all">
+                            <p class="a-tit">진행서비스</p>
+                            <p class="a-txt">홈페이지, 네이버, 페이스북, 인스타그램,구글, 마케팅</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <p class="prj-type">내부 프로젝트</p>
+                  <a class="more">더보기</a>
+                  <p class="prj-nm">프로젝트명</p>
+                  <div class="prj-wrap">
+                    <div class="date">
+                      <p class="ti"><i>작업 기간</i> <span>2022 (3개월)</span></p>
+                    </div>
+                    <div class="key-wrap">
+                      <p class="ti"><i>진행 서비스</i></p>
+                      <div class="key-word">
+                        <span>홈페이지</span><span>네이버</span><span>구글</span><span>페이스북</span><span>인스타그램</span>
+                        <div class="more">
+                          <img src="../img/more.svg" alt="">
+                          <div class="all">
+                            <p class="a-tit">진행서비스</p>
+                            <p class="a-txt">홈페이지, 네이버, 페이스북, 인스타그램,구글, 마케팅</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <a class="more-list line-btn l-gray">더보기</a>
+            </div>
+
+            <!--tab3일때 노출되는 영역-->
+            <div class="tab-cont tab3-cont">
+              <h4 class="tit">서비스 평가 <span>15</span></h4>
+              <div class="eval">
+                <img src="../img/star.svg" alt="">
+                <img src="../img/star.svg" alt="">
+                <img src="../img/star.svg" alt="">
+                <img src="../img/star.svg" alt="">
+                <img src="../img/star.svg" alt="">
+                <span>4.9</span>
+                <p>(16개의 평가)</p>
+              </div>
+              <div class="search-btns">
+                <!--a 태그에 on 클래스 추가 되면 체크상태로 바뀜-->
+                <a class="on"><i></i>최신순</a>
+                <a><i></i>별점높은순</a>
+                <a><i></i>별점낮은순</a>
+              </div>
+              <ul class="eval-list">
+                <li>
+                  <div class="eval-num"><img src="../img/star.svg" alt=""> 4.9 <span class="date">22.08.25</span></div>
+                  <p>너무 좋아요 빨리 해주셔서 감사합니다~!</p>
+                  <div class="nm">김**</div>
+                  <a class="del">삭제하기</a>
+                </li>
+                <li>
+                  <div class="eval-num"><img src="../img/star.svg" alt=""> 4.9 <span class="date">22.08.25</span></div>
+                  <p>너무 좋아요 빨리 해주셔서 감사합니다~!</p>
+                  <div class="nm">김**</div>
+                </li>
+                <li>
+                  <div class="eval-num"><img src="../img/star.svg" alt=""> 4.9 <span class="date">22.08.25</span></div>
+                  <p>너무 좋아요 빨리 해주셔서 감사합니다~!</p>
+                  <div class="nm">김**</div>
+                </li>
+                <li>
+                  <div class="eval-num"><img src="../img/star.svg" alt=""> 4.9 <span class="date">22.08.25</span></div>
+                  <p>너무 좋아요 빨리 해주셔서 감사합니다~!</p>
+                  <div class="nm">김**</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <footer>
+        <div class="ft-inner">
+          <p class="co-info">
+            ㈜ 조이마케팅<br>
+            대표이사 <i></i>고재연 | 사업자등록번호 <i></i> 496-86-01446  |  TEL <i></i> 02-539-9888 | E-MAIL <i></i> info@jykgroup.co.kr<br>
+            서울본사 <i></i>서울시 강남구 강남대로 354, 혜천빌딩 11층<br>
+            천안지사 <i></i>충남 천안시 서북구 축구센터로 167, 다산빌딩 5층
+          </p>
+          <a class="terms">이용약관</a>
+          <a class="privacy">개인정보처리방침</a>
+          <p class="copy">© Copyright 2022 Joymarketing. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <!--진행프로젝트 상세보기 팝업 -->
+    <!--popup-prj-detail에 on 클래스 추가되면 팝업 오픈 됨 -->
+    <!--이미지가 없으면 non-img 클래스 추가 스와이프 숨김처리 됨-->
+    <div class="popup-prj-detail">
+      <div class="dim"></div>
+      <div class="inner">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../img/swiper.png" alt=""></div>
+            <div class="swiper-slide"><img src="../img/swiper.png" alt=""></div>
+            <div class="swiper-slide"><img src="../img/swiper.png" alt=""></div>
+            <div class="swiper-slide"><img src="../img/swiper.png" alt=""></div>
+            <div class="swiper-slide"><img src="../img/swiper.png" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!--prj-type에 out-side추가 되면 외부 프로제트 컬러표시-->
+        <p class="prj-type out-side">외부 프로젝트</p>
+
+        <h3>학원 수강생 확보를 위한 마케팅</h3>
+        <a href="" class="line-btn l-gray link"><img src="../img/ico-link.svg" alt=""> 포트폴리오 링크</a>
+
+        <div class="cell">
+          <p>작업 기간</p><i>2022년 (3개월)</i>
+          <p>클라이언트</p><i>디자인아카데미</i>
+        </div>
+        <div class="cell">
+          <p>진행 서비스</p>
+          <span>전단지</span>
+          <span>블로그광고</span>
+          <span>인스타그램</span>
+          <span>유튜브</span>
+        </div>
+
+        <div class="cnt-txt">
+          <div class="top">
+            <p>업종</p>
+            <p>진행 목적</p>
+            <p>진행 서비스</p>
+            <p>예산</p>
+          </div>
+          <div class="btt">
+            <p>교육/학원</p>
+            <p>수강생 확보</p>
+            <div class="key-word">
+              <p>전단지, 블로그광고</p>
+              <div class="more">
+                <img src="../img/more.svg" alt="">
+                <div class="all">
+                  <p class="a-tit">진행서비스</p>
+                  <p class="a-txt">홈페이지, 네이버, 페이스북, 인스타그램,구글, 마케팅</p>
+                </div>
+              </div>
+            </div>
+            <p>월 300만원</p>
+          </div>
+        </div>
+
+        <h4>프로젝트 설명 및 성과</h4>
+        <div class="txt-wrap">
+          교육, 학원 브랜드 평가 1위 마케팅 업체입니다.이상은 미인을 같지 반짝이는 노래하며 군영과 바로 만천하의 우리 봄바람이다. 우는 것이 거선의 어디 불어 장식하는 인간이 모래뿐일 같은 쓸쓸하랴? 날카로우나 얼마나 피고 내려온 할지라도 보이는 과실이 대중을 때문이다. 하는 같은 천자만홍이 장식하는 기관과 얼마나 꽃이 물방아 싸인 아름다우냐? 이것을 끝에 거선의 곳으로 얼마나 말이다. 있는 모래뿐일 고행을 천고에 튼튼하며, 얼마나 피어나기 타오르고 봄바람이다. 하는 두손을 같지 예가 말이다. 거선의 속에 바이며, 되려니와, 지혜는 살았으며, 풍부하게 있다. 그러므로 없으면, 몸이 같이 있다. 얼마나 석가는 시들어 되는 같은 피다. 영원히 것은 청춘의 자신과 봄바람이다.이상은 미인을 같지 반짝이는 노래하며 군영과 바로 만천하의 우리 봄바람이다. 우는 것이 거선의 어디 불어 장식하는 인이상은 미인을 같지 반짝이는 노래
+        </div>
+        <a class="close">닫기</a>
+      </div>
+    </div>
+
+    <!--삭제 확인 팝업 -->
+    <!--popup에 on 클래스 추가되면 팝업 오픈 됨 -->
+    <div class="popup">
+      <div class="dim"></div>
+      <div class="inner del-inner">
+        <p class="tit">작성하신 서비스 평가를 삭제하시겠어요?</p>
+        <p class="sub">작성하신 평가는 다시 복구할 수 없습니다.<br> 그래도 삭제하시겠어요?</p>
+        <div class="btns">
+          <a class="btn gray">취소</a>
+          <a class="btn">확인</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/pageHeight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+</body>
+</html>

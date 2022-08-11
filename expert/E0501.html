@@ -12,7 +12,7 @@
   <div class="container">
     <!--wrap에 client 클래스면 클라인언트 회원-->
     <!--wrap에 expert 클래스면 전문가 회원-->
-    <div class="wrap client">
+    <div class="wrap expert">
       <header>
 
         <!--홍길동 누르면 h-inner에 info-open-->
@@ -51,43 +51,44 @@
 
       <aside class="member-aside">
         <p class="user-type"><!--여기엔 클라이언트면 클라이언트가 전문가면 파트너 텍스트가 들어갑니다.--></p>
-        <p class="nm">홍길동님</p>
+        <p class="nm">조이마케팅</p>
         <p class="id">joy1234 <a href="">계정관리 <img src="../img/arrow.svg" alt=""></a></p>
         <div class="prj-summary">
-          <p>의뢰한 프로젝트 <span>0</span></p>
+          <p>추천된 프로젝트 <span>0</span></p>
           <p>계약한 프로젝트 <span>0</span></p>
           <p>완료된 프로젝트 <span>0</span></p>
         </div>
-        <div class="btn"><img src="../img/ico-plus.svg" alt="">프로젝트 의뢰하기</div>
         <div class="prj-manage">
           <p>프로젝트 관리</p>
-
           <!--on 클래스 추가 되면 검정색 강조표시-->
-          <a href="" class="on">의뢰한 프로젝트</a>
+          <a href="" class="on">추천된 프로젝트</a>
+          <a href="">계약한 프로젝트</a>
           <a href="">완료된 프로젝트</a>
+        </div>
+        <div class="prj-manage profile-manage">
+          <p>프로필 관리</p>
+          <!--on 클래스 추가 되면 검정색 강조표시-->
+          <a href="">파트너 인증</a>
+          <a href="">프로필 관리</a>
+          <a href="">포트폴리오 관리</a>
         </div>
         <a href="" class="notice">공지사항</a>
       </aside>
 
 
       <!--empty-prj 클래스 추가시 의뢰한 프로젝트 없음 노출되고 결과 값 리스트는 숨김처리-->
-      <section class="on-request commissioned empty-prj">
+      <section class="on-request commissioned">
 
-        <article>
-          <h3>의뢰한 프로젝트</h3>
+        <article class="e0401">
+          <h3>완료한 프로젝트</h3>
 
           <!--의로한 프로젝트가 없을때 노출됨-->
           <div class="prj-content">
             <div class="empty-cnt">
               <img src="../img/empty.svg" alt="">
               <p>
-                <span class="client-txt">의뢰한 프로젝트가 없어요<br> 조이봇에 프로젝트 의뢰해보세요!</span><!--클라이언트 일때 노출-->
-                <span class="expert-txt">추천된 프로젝트가 없어요</span><!--전문가 일때 노출-->
+                <span class="expert-txt">계약한 프로젝트가 없어요</span><!--전문가 일때 노출-->
               </p>
-              <a class="line-btn l-blue">
-                <span class="client-txt">프로젝트 의뢰하기</span><!--클라이언트 일때 노출-->
-                <span class="expert-txt">의뢰 프로젝트 보기</span><!--전문가 일때 노출-->
-              </a>
             </div>
           </div>
 
@@ -100,12 +101,8 @@
                   <div class="key-word">
                     <span>페이스북</span><span>네이버</span><span>인스타그램</span><span>구글</span>
                   </div>
-                  <p class="head">모집마감일 <span class="date">2022.07.01 ~ 07.31</span></p>
-                </div>
-                <div class="info-r">
-                  <!--계약전-before, 검토중-under, 모집중-recruitment, 계약완료-comp, 모집완료-recruit-comp, 진행중-progress-->
-                  <p class="before">계약전</p>
-                  <p class="under">검토중</p>
+                  <p class="head">프로젝트 진행 기간 <span class="date">~22.09.10(2개월 미만)</span></p>
+                  <p class="head">클라이언트 <span>디자인 아카데미</span></p>
                 </div>
               </li>
               <li>
@@ -114,11 +111,8 @@
                   <div class="key-word">
                     <span>페이스북</span><span>네이버</span><span>인스타그램</span><span>구글</span>
                   </div>
-                  <p class="head">모집마감일 <span class="date">2022.07.01 ~ 07.31</span></p>
-                </div>
-                <div class="info-r">
-                  <p class="before">계약전</p>
-                  <p class="recruitment">모집중</p>
+                  <p class="head">프로젝트 진행 기간 <span class="date">~22.09.10(2개월 미만)</span></p>
+                  <p class="head">클라이언트 <span>디자인 아카데미</span></p>
                 </div>
               </li>
               <li>
@@ -127,11 +121,8 @@
                   <div class="key-word">
                     <span>페이스북</span><span>네이버</span><span>인스타그램</span><span>구글</span>
                   </div>
-                  <p class="head">모집마감일 <span class="date">2022.07.01 ~ 07.31</span></p>
-                </div>
-                <div class="info-r">
-                  <p class="comp">계약완료</p>
-                  <p class="recruit-comp">모집완료</p>
+                  <p class="head">프로젝트 진행 기간 <span class="date">~22.09.10(2개월 미만)</span></p>
+                  <p class="head">클라이언트 <span>디자인 아카데미</span></p>
                 </div>
               </li>
               <li>
@@ -140,11 +131,8 @@
                   <div class="key-word">
                     <span>페이스북</span><span>네이버</span><span>인스타그램</span><span>구글</span>
                   </div>
-                  <p class="head">모집마감일 <span class="date">2022.07.01 ~ 07.31</span></p>
-                </div>
-                <div class="info-r">
-                  <p class="before">계약전</p>
-                  <p class="progress">진행중</p>
+                  <p class="head">프로젝트 진행 기간 <span class="date">~22.09.10(2개월 미만)</span></p>
+                  <p class="head">클라이언트 <span>디자인 아카데미</span></p>
                 </div>
               </li>
               <li>
@@ -153,11 +141,8 @@
                   <div class="key-word">
                     <span>페이스북</span><span>네이버</span><span>인스타그램</span><span>구글</span>
                   </div>
-                  <p class="head">모집마감일 <span class="date">2022.07.01 ~ 07.31</span></p>
-                </div>
-                <div class="info-r">
-                  <p class="comp">계약완료</p>
-                  <p class="done">완료</p>
+                  <p class="head">프로젝트 진행 기간 <span class="date">~22.09.10(2개월 미만)</span></p>
+                  <p class="head">클라이언트 <span>디자인 아카데미</span></p>
                 </div>
               </li>
             </ul>

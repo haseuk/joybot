@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JOYBOT</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!--wrap에 client 클래스면 클라인언트 회원-->
+    <!--wrap에 expert 클래스면 전문가 회원-->
+    <div class="wrap client">
+      <section class="login-page">
+
+        <!--로그인 정보가 다른경우 article에 non-value-->
+        <article class="">
+          <p class="tit">로그인</p>
+          <p class="sub">조이봇이 처음이신가요? <a class="join">회원가입하기</a></p>
+          <!--로그인 정보가 다른경우 노출문구-->
+          <p class="not-correct"><img src="../img/ico-n-corr.svg" alt=""> 로그인 정보가 올바르지 않습니다.</p>
+          <div class="info-wrap">
+            <p>아이디</p>
+            <div class="input">
+              <!--input 태그에 error 클래스면 붉은색테두리와 오류 메세지 노출됨-->
+              <input type="text" placeholder="아이디를 입력해주세요">
+              <!--오류 메세지-->
+              <span class="error-txt">아이디는 최소6자 최대20자입니다</span>
+              <!--del에 on클래스 추가되면 노출-->
+              <a class="del"><img src="../img/ico-x-dark-circle.svg" alt=""></a>
+            </div>
+            <p>비밀번호</p>
+            <div class="input">
+              <!--input 태그에 error 클래스면 붉은색테두리-->
+              <input type="text" placeholder="비밀번호를 입력해주세요">
+              <!--del에 on클래스 추가되면 노출-->
+              <a class="del"><img src="../img/ico-x-dark-circle.svg" alt=""></a>
+            </div>
+          </div>
+          <a class="btn">로그인</a>
+          <div class="user-info-search">
+            <p>아이디가 기억이 안나시나요? <a>아이디 찾기 <img src="../img/ico-right-gray.svg" alt=""></a></p>
+            <p>비밀번호가 기억이 안나시나요? <a>비밀번호 찾기 <img src="../img/ico-right-gray.svg" alt=""></a></p>
+          </div>
+          <div class="nk">
+            <p>OR</p>
+            <a><img src="../img/naver.png" alt=""></a>
+            <a><img src="../img/kkt.png" alt=""></a>
+          </div>
+        </article>
+      </section>
+    </div>
+  </div>
+  <script src="../js/pageHeight.js"></script>
+</body>
+</html>

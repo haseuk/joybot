@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JOYBOT</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!--wrap에 client 클래스면 클라인언트 회원-->
+    <!--wrap에 expert 클래스면 전문가 회원-->
+    <div class="wrap client">
+      <section class="login-page">
+
+        <!--비밀번호 정보가 다른경우 article에 non-value-->
+        <article class="user-id">
+          <p class="tit"><img src="../img/ico-left.svg" alt="">비밀번호 찾기</p>
+          <p class="sub">가입정보를 입력해주세요</p>
+          <!--일치하는 비밀번호가 없을경우 노출됨-->
+          <p class="not-correct"><img src="../img/ico-n-corr.svg" alt="">정보가 올바르지 않습니다. 가입 정보를 다시 입력해주세요</p>
+          <div class="info-wrap">
+            <div class="join-type">
+              <p>가입유형</p>
+              <label>
+                <input type="radio" name="type">
+                <i></i>
+                <s>클라이언트</s>
+              </label>
+              <label>
+                <input type="radio" name="type">
+                <i></i>
+                <s>파트너</s>
+              </label>
+            </div>
+            <p>이름</p>
+            <div class="input">
+              <input type="text" placeholder="가입하신 이름을 입력하세요">
+              <!--del에 on클래스 추가되면 노출-->
+              <a class="del"><img src="../img/ico-x-dark-circle.svg" alt=""></a>
+            </div>
+            <p>이메일</p>
+            <div class="input">
+              <input type="text" placeholder="가입하신 이메일을 입력하세요">
+              <!--del에 on클래스 추가되면 노출-->
+              <a class="del"><img src="../img/ico-x-dark-circle.svg" alt=""></a>
+            </div>
+          </div>
+          <a class="btn gray">다음</a>
+        </article>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

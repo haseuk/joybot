@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JOYBOT</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!--wrap에 client 클래스면 클라인언트 회원-->
+    <!--wrap에 expert 클래스면 전문가 회원-->
+    <div class="wrap client">
+      <header>
+
+        <!--홍길동 누르면 h-inner에 info-open-->
+        <div class="h-inner">
+          <h1><a href="">JOYBOT</a></h1>
+          <div class="gnb-list">
+            <a href="">서비스 소개</a>
+            <a href="">의뢰중 프로젝트</a>
+          </div>
+
+          <!--log-wrap에 logged 클래스 추가되면 로그인 된 상태-->
+          <div class="log-wrap logged">
+            <div class="before-login">
+              <a class="join">회원가입</a>
+              <a class="login">로그인</a>
+            </div>
+
+            <!--로그인되면 노출 됨-->
+            <div class="joined">
+              <p class="user-type"><!--여기엔 클라이언트면 클라이언트가 전문가면 전문가 텍스트가 들어갑니다.--></p>
+              <a class="user">홍길동 님</a>
+            </div>
+          </div>
+
+          <!--홍길동 누르면 노출 됨-->
+          <div class="info-box">
+            <div class="info-inner">
+              <p class="user-type"><!--여기엔 클라이언트면 클라이언트가 전문가면 전문가 텍스트가 들어갑니다.--></p><br>
+              <a class="user">홍길동 고객님</a>
+              <a class="prj-manage">프로젝트 관리</a>
+            </div>
+            <a class="log-out">로그아웃</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="project-order">
+
+        <!--article step1 클래스면 01.서비스 선택 화면 노출 됨-->
+        <!--article step2 클래스면 02.업종 선택 화면 노출 됨-->
+        <!--article step3 클래스면 03.프로젝트 상세 정보 입력 화면 노출 됨-->
+        <!--article step4 클래스면 04.검토 화면 노출 됨-->
+        <article class="step1">
+          <h2>프로젝트 의뢰하기</h2>
+          <div class="step-status">
+            <p class="step">01. 서비스 선택</p>
+            <p class="step">02. 업종 선택</p>
+            <p class="step">03. 프로젝트 상세 정보 입력</p>
+            <p class="step">04. 검토</p>
+          </div>
+
+          <!--01.서비스 선택 화면-->
+          <div class="step-wrap step1-wrap">
+            <div class="tit-wrap">
+              <span>01</span>
+              <p>필요하신 서비스를<br> 선택해주세요</p>
+            </div>
+            <div class="select-box">
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>통합마케팅</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>홈페이지</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>네이버</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>페이스북</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>인스타그램</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>구글</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>유튜브</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>쇼핑몰/스토어</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>기타</s>
+              </label>
+            </div>
+            <div class="btns">
+              <a class="btn dark-gray">다음</a>
+            </div>
+          </div>
+
+          <!--02.업종 선택 화면-->
+          <div class="step-wrap step2-wrap">
+            <div class="tit-wrap">
+              <span>02</span>
+              <p>종사하고 계시는<br> 업종을 선택해주세요</p>
+            </div>
+            <div class="select-box">
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>IT/솔루션</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>가구/인테리어</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>건설/분양/부동산</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>공공기관/공기업</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>교육/학원</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>금융/대출</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>렌탈/임대/리스</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>매체/미디어</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>문화/공연/예술</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>반려동물</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>병원/의료/제약</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>보험/상조</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>뷰티/미용</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>생활/잡화</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>스포츠/레저</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>식품/음료</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>엔터테인먼트</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>여행</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>웨딩/이벤트</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>호텔/숙박</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>의류/패션잡화</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>제조/생산</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>주식/증권</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>협회/단체</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>인쇄/출판</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>식음료/외식/프랜차이즈</s>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>기타</s>
+              </label>
+            </div>
+            <div class="btns">
+              <a class="btn gray">뒤로</a>
+              <a class="btn dark-gray">다음</a>
+            </div>
+          </div>
+
+          <!--03.프로젝트 상세 정보 입력-->
+          <div class="step-wrap step3-wrap">
+            <div class="tit-wrap">
+              <span>03</span>
+              <p>프로젝트의 상세 정보를<br> 입력해주세요</p>
+            </div>
+            <div class="info-enter">
+              <ul>
+                <li>
+                  <p class="tit">프로젝트 진행 목적</p>
+                  <input type="text" placeholder="ex) 수강생 확보">
+                </li>
+                <li>
+                  <p class="tit">타켓</p>
+                  <input type="text" placeholder="ex) 40대, 여성">
+                </li>
+                <li>
+                  <p class="tit">프로젝트 요청 사항</p>
+                  <textarea placeholder="프로젝트 요청 사항을 입력해주세요.
+만약 작성이 어려우실 경우 아래 예시를 보고 기본적인 정보(회사 정보, 의뢰 목적)를 입력해주세
+요. 상담을 통해 요청 사항을 구체화시켜 드리겠습니다
+
+ex)
+디자이너 양성 교육을 진행하는 교육 아카데미 입니다.
+재취업을 희망하는 40대 여성을 주 타켓으로 잡고 있습니다.
+교육생 모집을 위한 홍보 전략과 실행 계획, 홍보 대행을 의뢰합니다."></textarea>
+                </li>
+                <li>
+                  <p class="tit">프로젝트 진행 기간</p>
+                  <div class="select-wrap">
+                    <!--select에 active 클래스 추가 되면 리스트 노출 됨-->
+                    <div class="select">
+                      <a class="sel-btn"></a>
+                      <p class="label">프로젝트 기간을 선택해주세요</p>
+                      <div class="opt-list">
+                        <ul class="opt-items">
+                          <li class="opt-item">1회</li>
+                          <li class="opt-item">1개월 미만</li>
+                          <li class="opt-item">2개월 미만</li>
+                          <li class="opt-item">3개월 미만</li>
+                          <li class="opt-item">6개월 미만</li>
+                          <li class="opt-item">1년 미만</li>
+                          <li class="opt-item">연간대행</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <p class="tit">예산</p>
+                  <input type="text" placeholder="ex) 월 300만원">
+                </li>
+                <li class="file">
+                  <p class="tit">첨부파일</p>
+<!--                  <label class="file-add">-->
+<!--                    <img src="../img/ico-plus-b.svg" alt="">-->
+<!--                    <input type="file">-->
+<!--                    <s>파일 등록</s>-->
+<!--                  </label>-->
+<!--                  <a class="file-reset">첨부파일.png<img src="../img/ico-x-gray-circle.svg" alt=""></a>-->
+                  <a class="line-btn"><img src="../img/ico-plus-b.svg" alt=""> 파일 등록</a>
+                  <div class="file">
+                    <span>첨부파일.png</span> <a class="file-reset"><img src="../img/ico-x-gray-circle.svg" alt=""></a>
+                  </div>
+                </li>
+                <li>
+                  <p class="tit">모집 마감일</p>
+                  <div class="input-calendar">
+                    <input type="date" data-placeholder="모집 마감일을 선택해주세요" required>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="btns">
+              <a class="btn gray">뒤로</a>
+              <a class="btn dark-gray">다음</a>
+            </div>
+          </div>
+
+
+          <!--04.검토 화면-->
+          <div class="step-wrap step4-wrap">
+            <div class="tit-wrap">
+              <span>04</span>
+              <p>프로젝트 등록 전<br> 입력하신 내용을<br> 확인해주세요</p>
+            </div>
+            <div class="examine">
+              <ul>
+                <li>
+                  <p class="tit">프로젝트 진행 목적</p>
+                  <p class="txt">수강생 확보</p>
+                </li>
+                <li>
+                  <p class="tit">타켓</p>
+                  <p class="txt">40대, 여성</p>
+                </li>
+                <li>
+                  <p class="tit">프로젝트 요청 사항</p>
+                  <p class="txt">디자이너 양성 교육을 진행하는 교육 아카데미 입니다.
+                    재취업을 희망하는 40대 여성을 주 타켓으로 잡고 있습니다.
+                    교육생 모집을 위한 홍보 전략과 실행 계획, 홍보 대행을 의뢰합니다.</p>
+                </li>
+                <li>
+                  <p class="tit">프로젝트 진행 기간</p>
+                  <p class="txt">연간 대행</p>
+                </li>
+                <li>
+                  <p class="tit">예산</p>
+                  <p class="txt">월 300만원</p>
+                </li>
+                <li>
+                  <p class="tit">첨부파일</p>
+                  <div class="file">
+                    <span>첨부파일.png</span> <a class="file-reset"><img src="../img/ico-x-gray-circle.svg" alt=""></a>
+                  </div>
+                </li>
+                <li>
+                  <p class="tit">모집마감일</p>
+                  <p class="txt">2022년 7월 14일</p>
+                </li>
+              </ul>
+            </div>
+            <div class="btns">
+              <a class="btn gray">뒤로</a>
+              <a class="btn dark-gray">프로젝트 등록하기</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <footer>
+        <div class="ft-inner">
+          <p class="co-info">
+            ㈜ 조이마케팅<br>
+            대표이사 <i></i>고재연 | 사업자등록번호 <i></i> 496-86-01446  |  TEL <i></i> 02-539-9888 | E-MAIL <i></i> info@jykgroup.co.kr<br>
+            서울본사 <i></i>서울시 강남구 강남대로 354, 혜천빌딩 11층<br>
+            천안지사 <i></i>충남 천안시 서북구 축구센터로 167, 다산빌딩 5층
+          </p>
+          <a class="terms">이용약관</a>
+          <a class="privacy">개인정보처리방침</a>
+          <p class="copy">© Copyright 2022 Joymarketing. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="../js/pageHeight.js"></script>
+</body>
+</html>

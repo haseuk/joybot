@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JOYBOT</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!--wrap에 client 클래스면 클라인언트 회원-->
+    <!--wrap에 expert 클래스면 전문가 회원-->
+    <div class="wrap client">
+      <header>
+
+        <!--홍길동 누르면 h-inner에 info-open-->
+        <div class="h-inner">
+          <h1><a href="">JOYBOT</a></h1>
+          <div class="gnb-list">
+            <a href="">서비스 소개</a>
+            <a href="">의뢰중 프로젝트</a>
+          </div>
+
+          <!--log-wrap에 logged 클래스 추가되면 로그인 된 상태-->
+          <div class="log-wrap logged">
+            <div class="before-login">
+              <a class="join">회원가입</a>
+              <a class="login">로그인</a>
+            </div>
+
+            <!--로그인되면 노출 됨-->
+            <div class="joined">
+              <p class="user-type"><!--여기엔 클라이언트면 클라이언트가 전문가면 전문가 텍스트가 들어갑니다.--></p>
+              <a class="user">홍길동 님</a>
+            </div>
+          </div>
+
+          <!--홍길동 누르면 노출 됨-->
+          <div class="info-box">
+            <div class="info-inner">
+              <p class="user-type"><!--여기엔 클라이언트면 클라이언트가 전문가면 전문가 텍스트가 들어갑니다.--></p><br>
+              <a class="user">홍길동 고객님</a>
+              <a class="prj-manage">프로젝트 관리</a>
+            </div>
+            <a class="log-out">로그아웃</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="notice-sec">
+        <article>
+          <h2>공지사항</h2>
+          <div class="notice-inner">
+            <ul>
+              <li class="head">
+                <p class="num">No</p>
+                <p class="tit">제목</p>
+                <p class="date">등록일</p>
+              </li>
+              <li>
+                <p class="num">24</p>
+                <p class="tit">바이럴 종합 광고 대행사 조이마케팅</p>
+                <p class="date">2022.7.8</p>
+              </li>
+              <li>
+                <p class="num">23</p>
+                <p class="tit">바이럴 종합 광고 대행사 조이마케팅</p>
+                <p class="date">2022.7.8</p>
+              </li>
+              <li>
+                <p class="num">22</p>
+                <p class="tit">바이럴 종합 광고 대행사 조이마케팅</p>
+                <p class="date">2022.7.8</p>
+              </li>
+              <li>
+                <p class="num">21</p>
+                <p class="tit">바이럴 종합 광고 대행사 조이마케팅</p>
+                <p class="date">2022.7.8</p>
+              </li>
+              <li>
+                <p class="num">20</p>
+                <p class="tit">바이럴 종합 광고 대행사 조이마케팅</p>
+                <p class="date">2022.7.8</p>
+              </li>
+              <li>
+                <p class="num">19</p>
+                <p class="tit">바이럴 종합 광고 대행사 조이마케팅</p>
+                <p class="date">2022.7.8</p>
+              </li>
+              <li>
+                <p class="num">18</p>
+                <p class="tit">바이럴 종합 광고 대행사 조이마케팅</p>
+                <p class="date">2022.7.8</p>
+              </li>
+              <li>
+                <p class="num">17</p>
+                <p class="tit">바이럴 종합 광고 대행사 조이마케팅</p>
+                <p class="date">2022.7.8</p>
+              </li>
+            </ul>
+          </div>
+          <div class="pagination">
+            <a class="prev"></a>
+            <!-- num에 on 클래스 들어가면 배경색과 폰트 강조 됨-->
+            <a class="num on">1</a>
+            <a class="num">2</a>
+            <a class="num">3</a>
+            <a class="num">4</a>
+            <a class="next"></a>
+          </div>
+        </article>
+      </section>
+
+      <footer>
+        <div class="ft-inner">
+          <p class="co-info">
+            ㈜ 조이마케팅<br>
+            대표이사 <i></i>고재연 | 사업자등록번호 <i></i> 496-86-01446  |  TEL <i></i> 02-539-9888 | E-MAIL <i></i> info@jykgroup.co.kr<br>
+            서울본사 <i></i>서울시 강남구 강남대로 354, 혜천빌딩 11층<br>
+            천안지사 <i></i>충남 천안시 서북구 축구센터로 167, 다산빌딩 5층
+          </p>
+          <a class="terms">이용약관</a>
+          <a class="privacy">개인정보처리방침</a>
+          <p class="copy">© Copyright 2022 Joymarketing. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="../js/pageHeight.js"></script>
+</body>
+</html>

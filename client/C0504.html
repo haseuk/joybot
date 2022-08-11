@@ -61,28 +61,14 @@
           <!--검토중일 경우 detail-cont에 under 클래스 추가되면 검토 상태로 변경-->
           <!--상세 진행중일 경우 detail-cont에 progress 클래스 추가되면 진행중 상태로 변경-->
           <div class="detail-cont">
-
-            <!--검토중 문구-->
-            <div class="under-review">
-              <img src="../img/ico-ex.svg" alt="">
-              <p><em>프로젝트 검토 중입니다. 전담 매니저가 유선으로 연락드릴 예정입니다.</em> 이 후 내용을 정리하여  전문가 모집 및 매칭을 도와드리겠습니다.</p>
-            </div>
-            <!--/////////-->
-
             <div class="detail-info">
               <div class="info-r">
-                <!--검토중일 경우 숨김처리 됨 -->
-                <div class="info-head">
-                  <span class="d-day">D-6</span>
-                </div>
-
                 <!--계약전-before, 검토중-under, 모집중-recruitment, 계약완료-comp, 모집완료-recruit-comp, 진행중-progress-->
-                <p class="before">계약전</p>
-                <p class="under">검토중</p>
+                <p class="comp">계약완료</p>
+                <p class="recruit-comp">완료</p>
               </div>
               <div class="info-l">
                 <p class="tit">학원 수강생 확보를 위한 마케팅 대행사 선정</p>
-                <p class="head">모집마감일 <span class="date">2022.07.01 ~ 07.31</span></p>
               </div>
               <h4>프로젝트 진행 목적</h4>
               <p class="txt">수강생 확보</p>
@@ -116,16 +102,7 @@
                 <span>홈페이지</span>
               </div>
 
-              <!--검토중엔 아래 파트너 버튼과 문의사항은 숨김 처리됨-->
-              <a href="" class="line-btn l-blue">파트너 모집글 보러가기 <i></i></a>
-              <div class="inquiry">
-                <p>문의할 것이 있으신가요?<em>AI 챗봇 조이봇에게 문의하세요!</em></p>
-                <a href="" class="btn">문의하기</a>
-              </div>
-              <!--//////////////////////-->
-
-              <!--상세 진행중일때 노출됨-->
-              <div class="partner-info">
+              <div class="partner-info" style="display: inline-block;">
                 <p class="tit">계약한 파트너</p>
                 <div class="thumb"><img src="../img/thumb.png" alt="" style="width: 40px;height: 40px;"></div>
                 <div class="part-cont">
@@ -134,8 +111,18 @@
                   <p class="txt">완료 프로젝트 <span>92건</span></p>
                 </div>
               </div>
-              <!--//////////////////////-->
 
+              <div class="service-eval">
+                <p class="tit">서비스 평가를 남겨주세요!</p>
+                <span></span>
+                <p class="txt"><b>조이마케팅의 서비스</b>는 어떠셨나요?<br> 지금 바로 서비스 평가를 남겨주세요!</p>
+                <a class="btn">서비스 평가 남기기</a>
+              </div>
+
+              <div class="inquiry">
+                <p>문의할 것이 있으신가요?<em>AI 챗봇 조이봇에게 문의하세요!</em></p>
+                <a href="" class="btn">문의하기</a>
+              </div>
             </div>
 
             <!--상세 진행중일때 노출됨-->

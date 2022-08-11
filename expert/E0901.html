@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JOYBOT</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!--wrap에 client 클래스면 클라인언트 회원-->
+    <!--wrap에 expert 클래스면 전문가 회원-->
+    <div class="popup">
+      <div class="inner essential">
+        <p><img src="../img/ico-excl.svg" alt="">필수항목을 모두 입력해주세요</p>
+      </div>
+    </div>
+
+
+    <!--필수항목을 모두 입력해주세요-->
+    <!--popup에 on 클래스 추가되면 팝업 오픈 됨 -->
+    <div class="wrap expert">
+      <header>
+
+        <!--홍길동 누르면 h-inner에 info-open-->
+        <div class="h-inner">
+          <h1><a href="">JOYBOT</a></h1>
+          <div class="gnb-list">
+            <a href="">서비스 소개</a>
+            <a href="">의뢰중 프로젝트</a>
+          </div>
+
+          <!--log-wrap에 logged 클래스 추가되면 로그인 된 상태-->
+          <div class="log-wrap logged">
+            <div class="before-login">
+              <a class="join">회원가입</a>
+              <a class="login">로그인</a>
+            </div>
+
+            <!--로그인되면 노출 됨-->
+            <div class="joined">
+              <p class="user-type"><!--여기엔 클라이언트면 클라이언트가 전문가면 전문가 텍스트가 들어갑니다.--></p>
+              <a class="user">홍길동 님</a>
+            </div>
+          </div>
+
+          <!--홍길동 누르면 노출 됨-->
+          <div class="info-box">
+            <div class="info-inner">
+              <p class="user-type"><!--여기엔 클라이언트면 클라이언트가 전문가면 전문가 텍스트가 들어갑니다.--></p><br>
+              <a class="user">홍길동 고객님</a>
+              <a class="prj-manage">프로젝트 관리</a>
+            </div>
+            <a class="log-out">로그아웃</a>
+          </div>
+        </div>
+      </header>
+
+      <aside class="member-aside">
+        <p class="user-type"><!--여기엔 클라이언트면 클라이언트가 전문가면 파트너 텍스트가 들어갑니다.--></p>
+        <p class="nm">조이마케팅</p>
+        <p class="id">joy1234 <a href="">계정관리 <img src="../img/arrow.svg" alt=""></a></p>
+        <div class="prj-summary">
+          <p>추천된 프로젝트 <span>0</span></p>
+          <p>계약한 프로젝트 <span>0</span></p>
+          <p>완료된 프로젝트 <span>0</span></p>
+        </div>
+        <div class="prj-manage">
+          <p>프로젝트 관리</p>
+          <!--on 클래스 추가 되면 검정색 강조표시-->
+          <a href="" class="on">추천된 프로젝트</a>
+          <a href="">계약한 프로젝트</a>
+          <a href="">완료된 프로젝트</a>
+        </div>
+        <div class="prj-manage profile-manage">
+          <p>프로필 관리</p>
+          <!--on 클래스 추가 되면 검정색 강조표시-->
+          <a href="">파트너 인증</a>
+          <a href="">프로필 관리</a>
+          <a href="">포트폴리오 관리</a>
+        </div>
+        <a href="" class="notice">공지사항</a>
+      </aside>
+
+      <section class="account on-request">
+
+        <!--portfolio 에 empty-prj클래스 추가 되면 포트폴리오가 없음 표시-->
+        <article class="portfolio">
+          <h3>포트폴리오 관리</h3>
+          <p class="sub">프로필에 올릴 포트폴리오를 등록해주세요.</p>
+          <a class="btn dark-gray">포트폴리오 등록하기</a>
+          <div class="search-bar">
+            <div class="search-btns">
+              <!--a 태그에 on 클래스 추가 되면 체크상태로 바뀜-->
+              <a class="on"><i></i>전체</a>
+              <a><i></i>내부(조이봇)</a>
+              <a><i></i>외부</a>
+            </div>
+          </div>
+
+
+          <!--등록하신 포트폴리오가 없어요-->
+          <div class="prj-content">
+            <div class="empty-cnt">
+              <img src="../img/empty.svg" alt="">
+              <p>등록하신 포트폴리오가 없어요</p>
+            </div>
+          </div>
+
+          <div class="manage-content">
+            <div class="head">
+              <p>구분</p>
+              <p>프로젝트명</p>
+              <p>작업 기간</p>
+              <p>진행서비스</p>
+            </div>
+            <ul>
+              <li>
+                <p class="out-side">외부</p>
+                <p>블로그 마케팅</p>
+                <p>2022 (3개월)</p>
+                <div class="key-word">
+                  <span>홈페이지</span><span>네이버</span><span>페이스북</span>
+                  <div class="more">
+                    <img src="../img/more.svg" alt="">
+                    <div class="all">
+                      <p class="a-tit">진행서비스</p>
+                      <p class="a-txt">홈페이지, 네이버,페이스북, 인스타그램,구글, 마케팅</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <p>내부</p>
+                <p>블로그 마케팅</p>
+                <p>2022 (3개월)</p>
+                <div class="key-word">
+                  <span>홈페이지</span><span>네이버</span><span>페이스북</span>
+                  <div class="more">
+                    <img src="../img/more.svg" alt="">
+                    <div class="all">
+                      <p class="a-tit">진행서비스</p>
+                      <p class="a-txt">홈페이지, 네이버,페이스북, 인스타그램,구글, 마케팅</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <p>내부</p>
+                <p>블로그 마케팅</p>
+                <p>2022 (3개월)</p>
+                <div class="key-word">
+                  <span>홈페이지</span><span>네이버</span><span>페이스북</span>
+                  <div class="more">
+                    <img src="../img/more.svg" alt="">
+                    <div class="all">
+                      <p class="a-tit">진행서비스</p>
+                      <p class="a-txt">홈페이지, 네이버,페이스북, 인스타그램,구글, 마케팅</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <p>내부</p>
+                <p>블로그 마케팅</p>
+                <p>2022 (3개월)</p>
+                <div class="key-word">
+                  <span>홈페이지</span><span>네이버</span><span>페이스북</span>
+                  <div class="more">
+                    <img src="../img/more.svg" alt="">
+                    <div class="all">
+                      <p class="a-tit">진행서비스</p>
+                      <p class="a-txt">홈페이지, 네이버,페이스북, 인스타그램,구글, 마케팅</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <p>내부</p>
+                <p>블로그 마케팅</p>
+                <p>2022 (3개월)</p>
+                <div class="key-word">
+                  <span>홈페이지</span><span>네이버</span><span>페이스북</span>
+                  <div class="more">
+                    <img src="../img/more.svg" alt="">
+                    <div class="all">
+                      <p class="a-tit">진행서비스</p>
+                      <p class="a-txt">홈페이지, 네이버,페이스북, 인스타그램,구글, 마케팅</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <p>내부</p>
+                <p>블로그 마케팅</p>
+                <p>2022 (3개월)</p>
+                <div class="key-word">
+                  <span>홈페이지</span><span>네이버</span><span>페이스북</span>
+                  <div class="more">
+                    <img src="../img/more.svg" alt="">
+                    <div class="all">
+                      <p class="a-tit">진행서비스</p>
+                      <p class="a-txt">홈페이지, 네이버,페이스북, 인스타그램,구글, 마케팅</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="pagination">
+            <a class="prev"></a>
+            <!-- num에 on 클래스 들어가면 배경색과 폰트 강조 됨-->
+            <a class="num on">1</a>
+            <a class="num">2</a>
+            <a class="num">3</a>
+            <a class="num">4</a>
+            <a class="next"></a>
+          </div>
+        </article>
+      </section>
+
+      <footer>
+        <div class="ft-inner">
+          <p class="co-info">
+            ㈜ 조이마케팅<br>
+            대표이사 <i></i>고재연 | 사업자등록번호 <i></i> 496-86-01446  |  TEL <i></i> 02-539-9888 | E-MAIL <i></i> info@jykgroup.co.kr<br>
+            서울본사 <i></i>서울시 강남구 강남대로 354, 혜천빌딩 11층<br>
+            천안지사 <i></i>충남 천안시 서북구 축구센터로 167, 다산빌딩 5층
+          </p>
+          <a class="terms">이용약관</a>
+          <a class="privacy">개인정보처리방침</a>
+          <p class="copy">© Copyright 2022 Joymarketing. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="../js/pageHeight.js"></script>
+</body>
+</html>

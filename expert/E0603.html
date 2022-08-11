@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JOYBOT</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!--wrap에 client 클래스면 클라인언트 회원-->
+    <!--wrap에 expert 클래스면 전문가 회원-->
+    <div class="wrap expert">
+      <header>
+
+        <!--홍길동 누르면 h-inner에 info-open-->
+        <div class="h-inner">
+          <h1><a href="">JOYBOT</a></h1>
+          <div class="gnb-list">
+            <a href="">서비스 소개</a>
+            <a href="">의뢰중 프로젝트</a>
+          </div>
+
+          <!--log-wrap에 logged 클래스 추가되면 로그인 된 상태-->
+          <div class="log-wrap logged">
+            <div class="before-login">
+              <a class="join">회원가입</a>
+              <a class="login">로그인</a>
+            </div>
+
+            <!--로그인되면 노출 됨-->
+            <div class="joined">
+              <p class="user-type"><!--여기엔 클라이언트면 클라이언트가 전문가면 전문가 텍스트가 들어갑니다.--></p>
+              <a class="user">홍길동 님</a>
+            </div>
+          </div>
+
+          <!--홍길동 누르면 노출 됨-->
+          <div class="info-box">
+            <div class="info-inner">
+              <p class="user-type"><!--여기엔 클라이언트면 클라이언트가 전문가면 전문가 텍스트가 들어갑니다.--></p><br>
+              <a class="user">홍길동 고객님</a>
+              <a class="prj-manage">프로젝트 관리</a>
+            </div>
+            <a class="log-out">로그아웃</a>
+          </div>
+        </div>
+      </header>
+
+      <aside class="member-aside">
+        <p class="user-type"><!--여기엔 클라이언트면 클라이언트가 전문가면 파트너 텍스트가 들어갑니다.--></p>
+        <p class="nm">조이마케팅</p>
+        <p class="id">joy1234 <a href="">계정관리 <img src="../img/arrow.svg" alt=""></a></p>
+        <div class="prj-summary">
+          <p>추천된 프로젝트 <span>0</span></p>
+          <p>계약한 프로젝트 <span>0</span></p>
+          <p>완료된 프로젝트 <span>0</span></p>
+        </div>
+        <div class="prj-manage">
+          <p>프로젝트 관리</p>
+          <!--on 클래스 추가 되면 검정색 강조표시-->
+          <a href="" class="on">추천된 프로젝트</a>
+          <a href="">계약한 프로젝트</a>
+          <a href="">완료된 프로젝트</a>
+        </div>
+        <div class="prj-manage profile-manage">
+          <p>프로필 관리</p>
+          <!--on 클래스 추가 되면 검정색 강조표시-->
+          <a href="">파트너 인증</a>
+          <a href="">프로필 관리</a>
+          <a href="">포트폴리오 관리</a>
+        </div>
+        <a href="" class="notice">공지사항</a>
+      </aside>
+
+      <section class="account on-request">
+        <article class="partner-cert">
+          <h3>파트너 인증</h3>
+          <p class="sub">인증 내용을 변경하고 싶다면 재인증하기 버튼을 눌러 재인증을 진행해주세요</p>
+          <a class="btn dark-gray">재인증하기</a>
+          <div class="manage-content">
+            <div class="head">
+              <p>기업형태</p>
+              <p>기업명</p>
+              <p>대표자</p>
+              <p>등록일자</p>
+              <p>인증상태</p>
+            </div>
+            <ul>
+              <li>
+                <p>법인사업자</p>
+                <p>조이마케팅조이마케팅조이마케팅</p>
+                <p>김조이</p>
+                <p>2021.7.14</p>
+                <!--examine 클래스 추가 되면 붉은색 강조표시-->
+                <p class="examine">검토중</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <footer>
+        <div class="ft-inner">
+          <p class="co-info">
+            ㈜ 조이마케팅<br>
+            대표이사 <i></i>고재연 | 사업자등록번호 <i></i> 496-86-01446  |  TEL <i></i> 02-539-9888 | E-MAIL <i></i> info@jykgroup.co.kr<br>
+            서울본사 <i></i>서울시 강남구 강남대로 354, 혜천빌딩 11층<br>
+            천안지사 <i></i>충남 천안시 서북구 축구센터로 167, 다산빌딩 5층
+          </p>
+          <a class="terms">이용약관</a>
+          <a class="privacy">개인정보처리방침</a>
+          <p class="copy">© Copyright 2022 Joymarketing. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="../js/pageHeight.js"></script>
+</body>
+</html>
