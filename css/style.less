@@ -375,14 +375,16 @@ textarea { font-family: Pretendard, sans-serif; }
             }
             .market-result { .tl;
               .result-wrap {
-                .result-box { .wh(350,332); }
+                .result-box { .wh(350,332); .clear;
+                  .detail-btn { float: none; }
+                }
               }
             }
             .market-list { .mt(90);
               .list { .wh(100%,347); background:rgba(242,244,245,0.5); .br(5); .p(72,64); .tl; .-box; .mb(36); .rel; overflow: hidden;
                 span { .fs(20); .lh(25); .ls(-0.03em); .semi-bold; .ib; .mb(8); color:#2478FC; }
                 .tit { .fs(30); .lh(38); .ls(-0.07em); color:#262C31; .mb(14); .bold; }
-                .sub-tit { .fs(18); .lh(25); .ls(-0.03em); color:#636C73; .regular; .w(235); .keep-all; }
+                .sub-tit { .fs(18); .lh(25); .ls(-0.03em); color:#636C73; .regular; .w(393); .keep-all; }
                 img { .wh(554,288); .abs; .rb; }
               }
             }
@@ -394,7 +396,7 @@ textarea { font-family: Pretendard, sans-serif; }
           &.top { .h(370); .bgc(#F4F9FF);
             &:after { .cnt; .wh(420,383); .contain('../img/bg0107.png'); .abs; .lt(50%,-80); .ml(-780); }
             .t-inner {
-              img { .wh(508,254); .abs; .lb(50%,-13); .ml(43); }
+              img { .wh(554,288); .abs; .lb(50%,-15); .ml(22); }
             }
           }
           &.cont { .w(1110); .mh-c;
@@ -406,9 +408,19 @@ textarea { font-family: Pretendard, sans-serif; }
               }
             }
             &.cont1 { .mt(60); .tl;
-              ul li { .wh(349,212); .ib; .vat; .m(0,31,24,0); .-a(#D1D5D9); .br(6); .-box; .tl;
-                &:nth-child(3n) { .mr(0); }
-                .partner-info { .-b(#D1D5D9); }
+              ul {
+                li { .wh(349,212); .ib; .vat; .m(0,31,24,0); .-a(#D1D5D9); .br(6); .-box; .tl;
+                  &:nth-child(3n) { .mr(0); }
+                  .partner-info { .-b(#D1D5D9); }
+                }
+              }
+              .empty-box { .tc; .h(282); .pt(46); .-box; .hide;
+                img { .wh(84,84); .ib; }
+                p { .fs(15); .lh(21); color: #B8BFC4; .mt(13); }
+              }
+              &.empty {
+                ul { .hide; }
+                .empty-box { .block; }
               }
             }
           }
@@ -459,9 +471,19 @@ textarea { font-family: Pretendard, sans-serif; }
               }
             }
             &.cont3 { .pb(0);
+              h2 em { color:#2478FC; }
+              .sub-tit { .mt(15); }
               .partners { .mh-c; .mt(50); .w(916);
-                li { .wh(215,70); .m(0,7,25,7); .ib; .vat; .-a(#848698); .br(36); .-box; .tc;
-                  img { .ib; }
+                li { .wh(215,70); .m(0,7,25,7); .ib; .vat; .-a(#848698); .br(36); .-box; .tc; .rel;
+                  img { .abs; .lt(50%,50%); }
+                  &.pn1 img { .wh(72,34); .m(-17,0,0,-36); }
+                  &.pn2 img { .wh(100,26); .m(-13,0,0,-50); }
+                  &.pn3 img { .wh(106,36); .m(-18,0,0,-53); }
+                  &.pn4 img { .wh(102,24); .m(-12,0,0,-51); }
+                  &.pn5 img { .wh(112,21); .m(-11,0,0,-56); }
+                  &.pn6 img { .wh(89,26); .m(-13,0,0,-45); }
+                  &.pn7 img { .wh(114,30); .m(-15,0,0,-57); }
+                  &.pn8 img { .wh(87,16); .m(-8,0,0,-44); }
                 }
               }
             }
@@ -785,15 +807,20 @@ textarea { font-family: Pretendard, sans-serif; }
               p { .fs(26); .lh(36); .ls(-0.007em); color: #262C31; .semi-bold; }
             }
             .select-box { .ib; .vat; .w(634); .mt(32);
-              label { .m(0,23,23,0); .ib; .vam; .rel;
-                &:nth-child(3n) { .mr(0); }
-                input[type=checkbox] + i { .wh(196,63); .br(6); .-a(#B8BFC4); .-box; .ib; .vam; }
-                input[type=checkbox]:checked + i { .-a(#2478FC); .rel;
-                  &:after { .cnt; .wh(16,16); .contain('../img/ico-chkd-blue.svg'); .abs; .lt(10,10); }
+              .tit { .fs(20); .lh(25); .ls(-0.003em); color: #636C73; }
+              .txt { .fs(15); .lh(21); color: #808991; .mb(14); }
+              .part {
+                .tit { .mb(14); }
+                label { .m(0,23,23,0); .ib; .vam; .rel;
+                  &:nth-of-type(3n) { .mr(0); }
+                  input[type=checkbox] + i { .wh(196,63); .br(6); .-a(#B8BFC4); .-box; .ib; .vam; }
+                  input[type=checkbox]:checked + i { .-a(#2478FC); .rel;
+                    &:after { .cnt; .wh(16,16); .contain('../img/ico-chkd-blue.svg'); .abs; .lt(10,10); }
+                  }
+                  input { .hide; }
+                  s { .fs(18); .lh(25); .ls(-0.003em); color: #262C31; .regular; .abs; .lt(50%,50%); transform: translate(-50%,-50%); .nowrap; }
+                  input[type=checkbox]:checked + i + s { color:#2478FC; }
                 }
-                input { .hide; }
-                s { .fs(18); .lh(25); .ls(-0.003em); color: #262C31; .regular; .abs; .lt(50%,50%); transform: translate(-50%,-50%); .nowrap; }
-                input[type=checkbox]:checked + i + s { color:#2478FC; }
               }
             }
             .btns { .fr; .mt(37);
